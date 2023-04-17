@@ -4,7 +4,8 @@
   "description": "In backend our server interacts with our database then we execute some code on our server to create an application which then server to the client side. This will speed up your website and also keeps your business logic hidden",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "Shon",
   "license": "ISC",

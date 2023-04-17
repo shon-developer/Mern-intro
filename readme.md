@@ -45,3 +45,18 @@ get bash => pwd => cd Desktop/ => ls => mkdir intro-to-node => cd intro-to-node 
 6. run the file using the command 'node index.js'
 
 ===================================================================================
+
+When we typed in localhost:3000, we specified a location of a server, Adn when we hit enter the browse will go to this location and make a request to get some data back when request gets made at the home location (app.get("/")) then the call back gets triggered and we send the browser a response which is just a plain test "Hello World". That
+get send back to the browser and render it on the screen.
+
+- create a new route called about so that when i got to the about page, of my website localhostto see a quick brief
+  bio of who you are
+
+============================================================
+
+# nodemon installation
+
+nodemon, an npm package that will make it way easier for us autostart our servers
+
+- nodemon is a utility that will monitor for any changes in your source and automatically restart your server
+- means my server is active and refreshed to the latest version of code at all time.
