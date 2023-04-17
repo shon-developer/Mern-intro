@@ -60,3 +60,60 @@ nodemon, an npm package that will make it way easier for us autostart our server
 
 - nodemon is a utility that will monitor for any changes in your source and automatically restart your server
 - means my server is active and refreshed to the latest version of code at all time.
+- it saves your sanity
+
+=============================================
+
+# let's make a calculator
+
+## Responding to request with html files
+
+- create a file called index.html in the root folder
+
+- index.html
+
+```html
+<body>
+  <h1></h1>
+  <form action="/" method="post">
+    <input type="text" name="num1" placeholder="first number" />
+    <input type="text" name="num2" placeholder="second number" />
+    <button type="submit" name="submit">Calculator</button>
+    <input />
+  </form>
+</body>
+```
+
+express => API reference => response => res.send => res.send => res.sendfile
+
+- send.file transfers the file at the given path
+  [Link - express,res.sendFils](http://express.js.com/en/api.html#res.send)
+
+## What is http response status code?
+
+It indicates whether an http request has been successfully completed
+100-199 => informational responses
+200-299 => success responses
+300-399 => redirectional responses
+400-499 => error from client side
+500-599 => error from server side
+
+## now lets add a past method to handle a post request that come to our home route
+
+```js
+const express = require("express");
+const app = express();
+PORT = 3000;
+```
+
+BMI Routing challenge
+
+. Create a new file called bmiCalculator.html inside the calculator folder from the last challenge
+. Add the html boiler plate and set the page the BMI Calculator
+. Add and html form, this form will make a post request to our server at the route/bmiCalculator. The form will have inputs weight and heighut with placeholder text that tell the user what they should type into which text box
+. Add a button which which says Calculate BMI
+. Add the get and post methods from the /bmiCalculator route into the same server.js file and we have been using
+. Use sendFile to send the bmiCalculator.html page as a response inside the get method
+. Add an h1 that says BMI Calculator
+. Inside server.js, create 2 variables one for weight and one for height
+. Use the BMI Calculator code you wrote previously, or write some new code to calculate and send back the result as text. It should read something like "Your BMI is N" where N is equal to the calculated BMI based on their weight and height inputs
